@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space"
+    tools:context="qualsuaidadeemoutroplaneta.projeto.com.qualsuaidadeemoutroplaneta.MainActivity">
+
+    <Button
+        android:id="@+id/Text_ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Basta informar dia, mês e ano do seu nascimento e depois clique em descobrir idade, logo em seguida será aberta uma janela com os planetas do sistema solar já com sua idade calculada em cada um deles!!!"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerDId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:scaleX="1.1"
+        android:scaleY="1.6"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/descobrirIdadeId"
+        android:layout_alignStart="@+id/descobrirIdadeId" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerMId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:scaleX="1.1"
+        android:scaleY="1.6"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerYId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:scaleX="1.1"
+        android:scaleY="1.6"
+        android:layout_alignBaseline="@+id/numberPickerMId"
+        android:layout_alignBottom="@+id/numberPickerMId"
+        android:layout_alignRight="@+id/descobrirIdadeId"
+        android:layout_alignEnd="@+id/descobrirIdadeId"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <ImageView
+        android:id="@+id/descobrirIdadeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bnt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
+
+</android.widget.RelativeLayout>
